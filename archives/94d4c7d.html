@@ -1,0 +1,430 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>树莓派系统 | Javis's Blogs</title><meta name="keywords" content="主页"><meta name="author" content="于邦震"><meta name="copyright" content="于邦震"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="树莓派+ROS_melodic+Ubuntu+meta桌面 安装大全">
+<meta property="og:type" content="article">
+<meta property="og:title" content="树莓派系统">
+<meta property="og:url" content="https://javis-yu.github.io/archives/94d4c7d.html">
+<meta property="og:site_name" content="Javis&#39;s Blogs">
+<meta property="og:description" content="树莓派+ROS_melodic+Ubuntu+meta桌面 安装大全">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png">
+<meta property="article:published_time" content="2020-08-05T04:34:45.000Z">
+<meta property="article:modified_time" content="2022-05-08T19:26:20.820Z">
+<meta property="article:author" content="于邦震">
+<meta property="article:tag" content="主页">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://javis-yu.github.io/archives/94d4c7d"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-6F0sHObQQP"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?da270e768783141ff6a72798583e77b9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '树莓派系统',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-09 03:26:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Javis's Blogs" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/headimg.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 个人项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/project/"><i class="fa-fw fa-solid fa-virus-covid"></i><span> 疫情图鉴</span></a></li><li><a class="site-page child" href="/project2/"><i class="fa-fw fa-solid fa-square-parking"></i><span> 立体停车库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-head-side-cough"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-heart"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/money/"><i class="fa-fw fa-solid fa-sack-dollar"></i><span> 打赏</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-star"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Javis's Blogs</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 个人项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/project/"><i class="fa-fw fa-solid fa-virus-covid"></i><span> 疫情图鉴</span></a></li><li><a class="site-page child" href="/project2/"><i class="fa-fw fa-solid fa-square-parking"></i><span> 立体停车库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-head-side-cough"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-heart"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/money/"><i class="fa-fw fa-solid fa-sack-dollar"></i><span> 打赏</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-star"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">树莓派系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-08T19:26:20.820Z" title="更新于 2022-05-09 03:26:20">2022-05-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="树莓派-ROS-melodic-Ubuntu-meta桌面-安装大全"><a href="#树莓派-ROS-melodic-Ubuntu-meta桌面-安装大全" class="headerlink" title="树莓派+ROS_melodic+Ubuntu+meta桌面 安装大全"></a>树莓派+ROS_melodic+Ubuntu+meta桌面 安装大全</h1><p>[toc]</p>
+<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>​		您首先是将ROS系统安装于Ubuntu对应的版本上，时常我们会因为不是统一版本，导致安装失败。其次是换源操作，但倘若你是在树莓派上安装对应的版本，这个时候要小心，因为树莓派4B属于Arm64位系统，所以换源一定是属于树莓派的源。</p>
+<p><em><strong>许多的电脑系统学习，时常会因为环境的安装，导致一半的人放弃；这里我要说，倘若你是真的爱，环境安装即使数十次，任不能阻挡你，那便是成功的一半了。</strong></em></p>
+<h2 id="安装Ubuntu系统"><a href="#安装Ubuntu系统" class="headerlink" title="安装Ubuntu系统"></a>安装Ubuntu系统</h2><p>这里我使用树莓派4B安装此操作系统，倘若你说虚拟机版本的ubuntu的话，基本上一模一样。(树莓派的问题和系统前的操作更加复杂。)</p>
+<p>基础配置：树莓派4B一个内存16GB</p>
+<p>软件下载：</p>
+<p>[1] SD Memory Card formatter 格式化软件   <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.sdcard.org/chs/downloads/formatter/index.html">https://www.sdcard.org/chs/downloads/formatter/index.html</a></p>
+<p>[2] Raspberry Pi Imager for Windows <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.raspberrypi.org/downloads/">https://www.raspberrypi.org/downloads/</a></p>
+<p>[3] 系统(我用的是Ubuntu 18.04树莓派4下载64位)  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://ubuntu.com/download/raspberry-pi">https://ubuntu.com/download/raspberry-pi</a></p>
+<p>[4] MobaXterm  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://moba.en.softonic.com/">https://moba.en.softonic.com/</a></p>
+<h3 id="安装前准备"><a href="#安装前准备" class="headerlink" title="安装前准备"></a>安装前准备</h3><p>第一次启动树莓派，要插入一个键盘，鼠标，HDMI线，连接网线</p>
+<h3 id="格式化SD卡"><a href="#格式化SD卡" class="headerlink" title="格式化SD卡"></a>格式化SD卡</h3><p>首先，下载好SD格式化软件，使用读卡器读取TF卡，然后打开SD格式化软件</p>
+<p>【图片】</p>
+<p>选择好要格式的卡，选择Quock format ，然后点击Format直接快速格式化SD卡</p>
+<h3 id="烧录ubuntu系统"><a href="#烧录ubuntu系统" class="headerlink" title="烧录ubuntu系统"></a>烧录ubuntu系统</h3><p>选择下载好的 Raspberry Pi Imager直接安装，然后双击打开，OS选择下载好的Ubuntu 18.04系统,SD卡选择烧录的卡，然后写入。</p>
+<p>【图片】</p>
+<p>写入完成后，将烧录好的SD卡插入树莓派背面的SD(TF)卡槽。</p>
+<h3 id="直接设置"><a href="#直接设置" class="headerlink" title="直接设置"></a>直接设置</h3><p>连接好电源、网线，然后打开树莓派，（其实键盘，鼠标，HDMI线非必须，可以使用ssh连接），连接会提示修改ubuntu用户密码。第一次到第三次输入<code>ubuntu</code>，然后输入两次新密码。设置完成。</p>
+<h3 id="ssh连接（仅适用于命令行系统）"><a href="#ssh连接（仅适用于命令行系统）" class="headerlink" title="ssh连接（仅适用于命令行系统）"></a>ssh连接（仅适用于命令行系统）</h3><p>这里我们先使用ssh连接，用MobaXterm软件。首先连接好电源、网线，然后打开树莓派，要通过路由器的设置网站（一般会在路由器上能找到），找到一个叫pi名字的，记住pi的地址。</p>
+<p>在MobaXterm中，打开找到ssh，输入ip地址。</p>
+<p>【图片】</p>
+<p>然后会让我们输入用户名，这里输入<code>ubuntu</code>,然后输入密码便打开了。</p>
+<h3 id="更新软件源"><a href="#更新软件源" class="headerlink" title="更新软件源"></a>更新软件源</h3><p>这里如果想深入了解的话建议访问这个网址：<code>https://blog.csdn.net/CharlesSimonyi/article/details/89346473</code></p>
+<p>不要在网站上随便复制，对应的系统架构不同，导致库文件和包不相同，所以建议如下操作：</p>
+<p>在命令行中输入<code>cp /etc/apt/sources.list ./sources.list.backup</code>先备份地址。</p>
+<p>然后输入 <code>sudo vim /etc/apt/sources.list</code>打开软件源。这里使用Vim来进行编辑。附录中有简单的对Vim的使用。</p>
+<p>将所有的<a target="_blank" rel="noopener external nofollow noreferrer" href="http://ports.ubuntu.com/ubuntu-ports%E5%85%A8%E9%83%A8%E6%9B%BF%E6%8D%A2%E4%B8%BA%E4%BD%A0%E8%A6%81%E7%9A%84%E6%BA%90%EF%BC%8C%E4%BE%8B%E5%A6%82%EF%BC%9A">http://ports.ubuntu.com/ubuntu-ports全部替换为你要的源，例如：</a></p>
+<p>中国科技大学地址：<code>http://mirrors.ustc.edu.cn/ubuntu-ports</code></p>
+<p>阿里地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://mirrors.aliyun.com/ubuntu-ports/">https://mirrors.aliyun.com/ubuntu-ports/</a></p>
+<p>然后<code>:wq</code>退出</p>
+<p>最后输入<code>sudo apt update</code>和<code>sudo apt upgrade</code>这里时常会有些问题，可以在网络上查找，或者在评论区说出来，我会区看看帮帮忙。</p>
+<h3 id="安装桌面系统-耗时很长"><a href="#安装桌面系统-耗时很长" class="headerlink" title="安装桌面系统(耗时很长)"></a>安装桌面系统(耗时很长)</h3><p>这里的任何几个桌面系统应该都是可以的</p>
+<p>sudo apt-get install ubuntu-mate-desktop&#96;</p>
+<p><code>sudo apt-get install xubuntu-desktop</code></p>
+<p><code>sudo apt-get install lubuntu-desktop</code></p>
+<p><code>sudo apt-get install kubuntu-desktop</code></p>
+<h3 id="远程连接屏幕"><a href="#远程连接屏幕" class="headerlink" title="远程连接屏幕"></a>远程连接屏幕</h3><p>方法一:</p>
+<p>安装xrdp</p>
+<p><code>sudo apt-get install xrdp</code></p>
+<p>重启xrdp服务</p>
+<p><code>sudo service xrdp restart</code></p>
+<p>Javis123</p>
+<p>方法二:</p>
+<p>安装VNC服务</p>
+<p><code>sudo apt-get install tightvncserver</code></p>
+<p>设置密码(输入连接客户端密码两次)</p>
+<p><code> vncpasswd</code></p>
+<p>开启服务功能(其中一定要记住他给出来的一个端口)</p>
+<p><code>vncserver </code></p>
+<p>记住端口(New ‘X’ desktop is  …. :2&#x2F;3&#x2F;4…)</p>
+<p>在MobaXterm输入地址的时候,比如:192.162.169.2:2  &lt;—这里一定加上<code>:x</code>x为输出端口</p>
+<h2 id="安装ROS"><a href="#安装ROS" class="headerlink" title="安装ROS"></a>安装ROS</h2><h3 id="多说几句"><a href="#多说几句" class="headerlink" title="多说几句"></a>多说几句</h3><p>几乎和官网的方法一致,但是总会有出现错误的地方.因为我们这里使用的是ubuntu 18.04系统,所以对应的ROS版本为Melodic;每个版本对应的不一样,一定要去官网查看好.这里我没有使用ubuntu20.04的原因是:树莓派可以安装好系统,但是无法找到ROS的完整软件包.但也有大神完成了树莓派官方系统的安装ROS…我这里不建议,因为官方系统没有对ros有较高的支持,而且 ROS的安装会出现一大堆意想不到的问题.这里我是经历过痛的,从树莓派官方系统到ubuntu的20.04版本,再到国外开发的ubuntu18.04桌面版本到现在的ubuntu mate18.04版本.只有少几次成功.</p>
+<h3 id="安装前的设置"><a href="#安装前的设置" class="headerlink" title="安装前的设置"></a>安装前的设置</h3><p>打开<code>Ubuntu的设置</code>-&gt;<code>软件与更新</code>-&gt;<code>Ubuntu软件</code>-&gt;勾选关键字<code>universe</code>,<code>restricted</code>,<code>multiverse</code>三项。 如图所示:</p>
+<p>[图片]</p>
+<h3 id="添加sources-list"><a href="#添加sources-list" class="headerlink" title="添加sources.list"></a>添加sources.list</h3><p><code>$ sudo sh -c &#39;. /etc/lsb-release &amp;&amp; echo &quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;</code></p>
+<p>建议使用国内或镜像源,官网使用的是外国的网站,这里使用的是中国科技大学的源.</p>
+<h3 id="添加keys"><a href="#添加keys" class="headerlink" title="添加keys"></a>添加keys</h3><p><code>$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116</code></p>
+<h3 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h3><p><code>$ sudo apt-get update </code></p>
+<p><code>$ sudo apt-get upgrade</code></p>
+<p>建议重启下树莓派 <code>sudo reboot</code></p>
+<h3 id="安装完整工具箱"><a href="#安装完整工具箱" class="headerlink" title="安装完整工具箱"></a>安装完整工具箱</h3><p>安装桌面完整版安装（包含ROS、rqt、rviz、通用机器人函数库、2D&#x2F;3D仿真器、导航以及2D&#x2F;3D感知功能）</p>
+<p><code>$ sudo apt-get install ros-melodic-desktop-full</code></p>
+<h3 id="配置ROS"><a href="#配置ROS" class="headerlink" title="配置ROS"></a>配置ROS</h3><h4 id="初始化rosdep"><a href="#初始化rosdep" class="headerlink" title="初始化rosdep"></a>初始化rosdep</h4><p><code>$ sudo apt install python-rosdep</code>  避免后面出现sudo rosdep：找不到命令提示</p>
+<p><code>$ sudo rosdep init</code></p>
+<p>这里一般都会出现问题,<strong>rosdep init 或者rosdep update 连接错误的解决办法:</strong></p>
+<p> ERROR: unable to process source <a target="_blank" rel="noopener external nofollow noreferrer" href="https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/xxxxx">https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/xxxxx</a> </p>
+<p>则:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#打开hosts文件</span><br><span class="line">sudo gedit /etc/hosts</span><br><span class="line">#在文件末尾添加</span><br><span class="line">151.101.84.133  raw.githubusercontent.com</span><br><span class="line">#保存后退出再尝试</span><br></pre></td></tr></table></figure>
+
+<p>成功之后输入:</p>
+<p><code>$ rosdep update</code></p>
+<h4 id="ROS环境配置"><a href="#ROS环境配置" class="headerlink" title="ROS环境配置"></a>ROS环境配置</h4><h5 id="添加ros环境变量"><a href="#添加ros环境变量" class="headerlink" title="添加ros环境变量"></a>添加ros环境变量</h5><p><code>$ echo &quot;source /opt/ros/melodic/setup.bash&quot; &gt;&gt; ~/.bashrc</code></p>
+<p><code>$ source ~/.bashrc</code></p>
+<h5 id="安装rosinstall"><a href="#安装rosinstall" class="headerlink" title="安装rosinstall"></a>安装rosinstall</h5><p>ROS中一个独立分开的常用命令行工具，它可以方便让你通过一条命令就可以给某个ROS软件包下载很多源码树。</p>
+<p><code>$ sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential </code></p>
+<h2 id="安装完成-测试"><a href="#安装完成-测试" class="headerlink" title="安装完成+测试"></a>安装完成+测试</h2><p>ROS服务开启的第一的命令,一般使用ROS都要先执行这个:</p>
+<p><code>$ roscore</code></p>
+<p>启动乌龟的终端:</p>
+<p><code>$ rosrun turtlesim turtlesim_node</code></p>
+<p>连接键盘命令的节点:</p>
+<p><code>$ rosrun turtlesim  turtle_teleop_key</code></p>
+<p>选择好键盘命令的节点终端窗口,通过键盘上的方向键，进行操作小海龟.</p>
+<h2 id="恭喜你，ROS已经成功的安装、配置并且运行！"><a href="#恭喜你，ROS已经成功的安装、配置并且运行！" class="headerlink" title="恭喜你，ROS已经成功的安装、配置并且运行！"></a>恭喜你，ROS已经成功的安装、配置并且运行！</h2><p>下面就正式开启ROS精彩的旅程！</p>
+<p>我个人已经成功,这是我对于成功后的总结,当然,其中我也面对了许多的问题,没有在文章中说明,是因为尝试前还不知是否可以,当写完这篇文章的时候,已经是安装完成的形态了.</p>
+<p>但我相信还是有许多同学总是卡在安装的过程中,这里您们可以留言在讨论区,共同解决问题.倘若有问题已经在讨论区中出现,请先查找讨论区的问题是否有,进行相对应的调试.</p>
+<p>尽量每一层都是新的问题.</p>
+<p>参考地址:</p>
+<p>[1] <a target="_blank" rel="noopener external nofollow noreferrer" href="https://ismango.blog.csdn.net/article/details/106049992">https://ismango.blog.csdn.net/article/details/106049992</a></p>
+<p>[2]  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://community.bwbot.org/topic/811/rosdep-init-%E6%88%96%E8%80%85rosdep-update-%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">https://community.bwbot.org/topic/811/rosdep-init-%E6%88%96%E8%80%85rosdep-update-%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95</a></p>
+<p>[3] <a target="_blank" rel="noopener external nofollow noreferrer" href="https://wiki.ros.org/melodic/Installation/Ubuntu">https://wiki.ros.org/melodic/Installation/Ubuntu</a></p>
+<p>[4] <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cnblogs.com/wjundong/p/10701160.html">https://www.cnblogs.com/wjundong/p/10701160.html</a></p>
+<p>[5]  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1zt411G7Vn?t=7&amp;p=5">https://www.bilibili.com/video/BV1zt411G7Vn?t=7&amp;p=5</a></p>
+<p>[6]  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163/content/chapter1/1.4.html">https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163/content/chapter1/1.4.html</a></p>
+<p>基础命令</p>
+<p>启动小海龟：</p>
+<p>$ roscore 	运行节点管理器</p>
+<p>$ rosrun turtlesim turtesim_node		打开仿真器节点</p>
+<p>$ rosrun turtlesim turtle_teleop_key    				  键盘控制键</p>
+<p>$ rqt_graph	显示图</p>
+<p>$ rosnode	显示节点相关信息的指令</p>
+<p>​	$ rosnode list	列出所有节点</p>
+<p>​	$ rosnode info  +上面列出的节点信息  	查询某节点具体信息</p>
+<p>​			例如：$ rosnode info &#x2F;rosout</p>
+<p>$ rostopic 	显示话题相关的指令</p>
+<p>​	$ rostopic list	列出所有话题</p>
+<p>$rostopic pub &#x2F;turtle1&#x2F;cmd_vel 后面的内容双击Tab键进行补齐</p>
+<p>​		解释：rostopic是使用话题的命令   pub  发布数据给某个topic   &#x2F;turtle1&#x2F;cmd_vel控制海龟运动的话题 </p>
+<p><img src="C:\Users\墨羽辰\AppData\Roaming\Typora\typora-user-images\image-20200604201225888.png" alt="image-20200604201225888"></p>
+<p>里面linear 为海龟的线速度  angular 为海龟的角速度  可修改</p>
+<p><img src="C:\Users\墨羽辰\AppData\Roaming\Typora\typora-user-images\image-20200604201942601.png" alt="image-20200604201942601"></p>
+<p>其中加了  -r 10     代表：重复发布，即一直执行  10 每秒10次</p>
+<p>$ rosmsg  	与消息有关</p>
+<p>​	$ rosmsg show +要展示的消息</p>
+<p>​		例子：rosmsg show geometry_msgs&#x2F;Twist</p>
+<p>​					geometry_msgs&#x2F;Twist 为海龟运动时补全的第一个命令</p>
+<p>$ rosservice	服务有关</p>
+<p>​	$ rosservice list 显示服务的相关功能</p>
+<p>​		其中&#x2F;spawn  产生新的海龟</p>
+<p>​			操作:</p>
+<p>​					$ rosservice call &#x2F;spawn  [2次Tab补全]</p>
+<p>​							call  发布请求    x、y、theta为xy坐标，角度  name为名字，不要出现重复</p>
+<p>$ rosbag record -a -O cmd_record	 话题记录工具</p>
+<p>record 记录功能  -a  也就是 -all记录所有  -O保存为压缩包   cmd_record压缩包名字</p>
+<p>重启后：</p>
+<p>$ roscore 	运行节点管理器</p>
+<p>$ rosrun turtlesim turtesim_node		打开仿真器节点</p>
+<p>$ rosbag play cmd_record.bag   		复现记入的路径数据  cmd_record.bag  为压缩包名字</p>
+<p>创建工作空间与功能包</p>
+<p>工程空间：workspace 存放<strong>工程</strong>发开发相关文件的文件夹</p>
+<p>src : 代码空间   			功能包</p>
+<p>build : 编译空间			中间文件</p>
+<p>devel : 开发空间    		放置最后的文件</p>
+<p>install : 安装空间			安装的位置</p>
+<p>空间结构图</p>
+<p><img src="C:\Users\墨羽辰\AppData\Roaming\Typora\typora-user-images\image-20200604204450894.png" alt="image-20200604204450894"></p>
+<p>创建工作空间：</p>
+<p>$ mkdir -p ~&#x2F;project_name&#x2F;src</p>
+<p>$ cd ~&#x2F;project_name&#x2F;src</p>
+<p>$ catkin_init_workspace</p>
+<p>编译空间：</p>
+<p>$ cd ~&#x2F;project_name&#x2F;</p>
+<p>$ catkin_make</p>
+<p>设置环境变量：</p>
+<p>$ source devel&#x2F;setup.bash</p>
+<p>检查环境变量：</p>
+<p> $   echo $ROS_PACKAGE_PATH</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://javis-yu.github.io">于邦震</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://javis-yu.github.io/archives/94d4c7d.html">https://javis-yu.github.io/archives/94d4c7d.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://javis-yu.github.io" target="_blank">Javis's Blogs</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6277c3fcf92f7961" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/archives/12e2ae1e.html"><img class="prev-cover" src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">电子钟的设计</div></div></a></div><div class="next-post pull-right"><a href="/archives/9ab27f24.html"><img class="next-cover" src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">大学物理</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/headimg.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">于邦震</div><div class="author-info__description">一个苦逼的二本大学生挣扎的历史</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Javis-Yu"><i class="fab fa-github"></i><span>我的GitHub 一起玩丫😘~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Javis-Yu" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yubangzhenmo@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://user.qzone.qq.com/1213695387" rel="external nofollow noreferrer" target="_blank" title="QQ：1213695387"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://mp.weixin.qq.com/s/I-0GQGbZmyjvwCht4vdwCw" rel="external nofollow noreferrer" target="_blank" title="微信公众号：浮生有雨秃头路"><i class="fa-brands fa-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">保证会持续更新有意思的知识🤯，不过希望您们喜欢🥴！！可以在留言里告诉我🥳，说不定下一个就更新你想知道的内容哦☕！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%91%E8%8E%93%E6%B4%BE-ROS-melodic-Ubuntu-meta%E6%A1%8C%E9%9D%A2-%E5%AE%89%E8%A3%85%E5%A4%A7%E5%85%A8"><span class="toc-number">1.</span> <span class="toc-text">树莓派+ROS_melodic+Ubuntu+meta桌面 安装大全</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90"><span class="toc-number">1.1.</span> <span class="toc-text">前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Ubuntu%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.</span> <span class="toc-text">安装Ubuntu系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87"><span class="toc-number">1.2.1.</span> <span class="toc-text">安装前准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96SD%E5%8D%A1"><span class="toc-number">1.2.2.</span> <span class="toc-text">格式化SD卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%83%A7%E5%BD%95ubuntu%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text">烧录ubuntu系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.2.4.</span> <span class="toc-text">直接设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh%E8%BF%9E%E6%8E%A5%EF%BC%88%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-number">1.2.5.</span> <span class="toc-text">ssh连接（仅适用于命令行系统）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E6%BA%90"><span class="toc-number">1.2.6.</span> <span class="toc-text">更新软件源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%B3%BB%E7%BB%9F-%E8%80%97%E6%97%B6%E5%BE%88%E9%95%BF"><span class="toc-number">1.2.7.</span> <span class="toc-text">安装桌面系统(耗时很长)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E5%B1%8F%E5%B9%95"><span class="toc-number">1.2.8.</span> <span class="toc-text">远程连接屏幕</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85ROS"><span class="toc-number">1.3.</span> <span class="toc-text">安装ROS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%AF%B4%E5%87%A0%E5%8F%A5"><span class="toc-number">1.3.1.</span> <span class="toc-text">多说几句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text">安装前的设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0sources-list"><span class="toc-number">1.3.3.</span> <span class="toc-text">添加sources.list</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0keys"><span class="toc-number">1.3.4.</span> <span class="toc-text">添加keys</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.3.5.</span> <span class="toc-text">更新系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%AE%8C%E6%95%B4%E5%B7%A5%E5%85%B7%E7%AE%B1"><span class="toc-number">1.3.6.</span> <span class="toc-text">安装完整工具箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEROS"><span class="toc-number">1.3.7.</span> <span class="toc-text">配置ROS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96rosdep"><span class="toc-number">1.3.7.1.</span> <span class="toc-text">初始化rosdep</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ROS%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.7.2.</span> <span class="toc-text">ROS环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0ros%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.3.7.2.1.</span> <span class="toc-text">添加ros环境变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85rosinstall"><span class="toc-number">1.3.7.2.2.</span> <span class="toc-text">安装rosinstall</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90-%E6%B5%8B%E8%AF%95"><span class="toc-number">1.4.</span> <span class="toc-text">安装完成+测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%81%AD%E5%96%9C%E4%BD%A0%EF%BC%8CROS%E5%B7%B2%E7%BB%8F%E6%88%90%E5%8A%9F%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE%E5%B9%B6%E4%B8%94%E8%BF%90%E8%A1%8C%EF%BC%81"><span class="toc-number">1.5.</span> <span class="toc-text">恭喜你，ROS已经成功的安装、配置并且运行！</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/4a17b156.html" title="Hello World"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/archives/4a17b156.html" title="Hello World">Hello World</a><time datetime="2022-05-08T16:34:28.389Z" title="发表于 2022-05-09 00:34:28">2022-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/e2465b5f.html" title="这是第一个尝试"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这是第一个尝试"/></a><div class="content"><a class="title" href="/archives/e2465b5f.html" title="这是第一个尝试">这是第一个尝试</a><time datetime="2022-05-08T16:34:28.387Z" title="发表于 2022-05-09 00:34:28">2022-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/d44ed278.html" title="LCD1602程序"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LCD1602程序"/></a><div class="content"><a class="title" href="/archives/d44ed278.html" title="LCD1602程序">LCD1602程序</a><time datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/67844827.html" title="Scikit-learn学习"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Scikit-learn学习"/></a><div class="content"><a class="title" href="/archives/67844827.html" title="Scikit-learn学习">Scikit-learn学习</a><time datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/54fadd01.html" title="mainim学习2"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mainim学习2"/></a><div class="content"><a class="title" href="/archives/54fadd01.html" title="mainim学习2">mainim学习2</a><time datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2022 By 于邦震</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">苦逼大学生向您问好 欢迎来到我的 <a href="https://javis-yu.github.io/">小小奋斗史博客</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="486462660" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
