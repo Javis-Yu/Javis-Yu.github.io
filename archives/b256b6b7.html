@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Proteus 和 Keil --&gt;模拟单片机 | Javis's Blogs</title><meta name="keywords" content="主页"><meta name="author" content="于邦震"><meta name="copyright" content="于邦震"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Proteus 和 Keil --&gt;模拟单片机学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Proteus 和 Keil --&gt;模拟单片机">
+<meta property="og:url" content="https://javis-yu.github.io/archives/b256b6b7.html">
+<meta property="og:site_name" content="Javis&#39;s Blogs">
+<meta property="og:description" content="Proteus 和 Keil --&gt;模拟单片机学习">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png">
+<meta property="article:published_time" content="2020-08-05T04:34:45.000Z">
+<meta property="article:modified_time" content="2022-05-10T05:52:48.189Z">
+<meta property="article:author" content="于邦震">
+<meta property="article:tag" content="主页">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://javis-yu.github.io/archives/b256b6b7"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-6F0sHObQQP"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?da270e768783141ff6a72798583e77b9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Proteus 和 Keil -->模拟单片机',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-10 13:52:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Javis's Blogs" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/headimg.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 个人项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/project/"><i class="fa-fw fa-solid fa-virus-covid"></i><span> 疫情图鉴</span></a></li><li><a class="site-page child" href="/project2/"><i class="fa-fw fa-solid fa-square-parking"></i><span> 立体停车库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-head-side-cough"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-heart"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/money/"><i class="fa-fw fa-solid fa-sack-dollar"></i><span> 打赏</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-star"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Javis's Blogs</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 个人项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/project/"><i class="fa-fw fa-solid fa-virus-covid"></i><span> 疫情图鉴</span></a></li><li><a class="site-page child" href="/project2/"><i class="fa-fw fa-solid fa-square-parking"></i><span> 立体停车库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-head-side-cough"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-heart"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/money/"><i class="fa-fw fa-solid fa-sack-dollar"></i><span> 打赏</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-star"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Proteus 和 Keil --&gt;模拟单片机</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-10T05:52:48.189Z" title="更新于 2022-05-10 13:52:48">2022-05-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">770</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Proteus-和-Keil-–-gt-模拟单片机"><a href="#Proteus-和-Keil-–-gt-模拟单片机" class="headerlink" title="Proteus 和 Keil –&gt;模拟单片机"></a>Proteus 和 Keil –&gt;模拟单片机</h1><p>&lt;**献给那些爱学习，但起始资金有很大问题的同学**&gt;</p>
+<p>但我还是建议买一个属于自己的单片机，这样子更加能够有实战作用，且能够解决一些软件上的问题。这个工具只能代替你去了解和掌握，但实践起来稍微会有偏差的。</p>
+<p>注：<em><strong>本教程不自带软件破解的安装（毕竟有版权、要的话私下私信我们），仅限于安装学习，不可商业化使用。</strong></em></p>
+<p>[toc]</p>
+<h2 id="Proteus"><a href="#Proteus" class="headerlink" title="Proteus"></a>Proteus</h2><p>Proteus是一款电子设计自动化（EDA）软件，除具有其它EDA软件的仿真功能，还能仿真单片机及其外围器件。</p>
+<p>这里我们较多使用为学习单片机的软件工具，不仅仅更加了解电路知识，也让我们学到了51单片机的结构于控制，是很好的搭建单片机的软件，倘若自己也要开发一款PCB电路板，想要看看自己设计的电路的控制情况，这里推荐使用这个。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk1.png" alt="pk1"></p>
+<h2 id="Keil"><a href="#Keil" class="headerlink" title="Keil"></a>Keil</h2><p>​		单片机的开发工具，多用于为单片机写程序软件。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk2.png" alt="pk2"></p>
+<h2 id="配置软件"><a href="#配置软件" class="headerlink" title="配置软件"></a>配置软件</h2><p>下载好两个文件后，要配置两个文件，使得他们能够相互连通，一个编程，一个仿真实验。</p>
+<p>首先，是Proteus，这个比较直接，下载好后可以直接使用，不用太麻烦。</p>
+<p>其次，是Keil，要设置好输出文件。</p>
+<p>方法：<img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk3.png" alt="pk3"></p>
+<p>使得编译好的文件能够烧录到仿真软件中，单片机也是如此。</p>
+<h2 id="软件使用"><a href="#软件使用" class="headerlink" title="软件使用"></a>软件使用</h2><h3 id="Proteus-1"><a href="#Proteus-1" class="headerlink" title="Proteus"></a>Proteus</h3><h4 id="添加元件和使用元件"><a href="#添加元件和使用元件" class="headerlink" title="添加元件和使用元件"></a>添加元件和使用元件</h4><p>有些元件的寻找和放置等使用方式+接地和接电源的符号</p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk4.png" alt="pk4"></p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk5.png" alt="pk5"></p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk6.png" alt="pk6"></p>
+<p>Ctrl+s—&gt;保存项目文件</p>
+<h3 id="Keil-1"><a href="#Keil-1" class="headerlink" title="Keil"></a>Keil</h3><h4 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h4><p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk7.png" alt="pk7"></p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk8.png" alt="pk8"></p>
+<p>这里应该是输入项目名，打错了</p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk9.png" alt="pk9"></p>
+<p>1处，因为我使用的是Keil5，是不包含51单片机的芯片的，所以我去官网下载了芯片文件，建议去网上下载keil4，减少了许多 麻烦。倘若你和我一样接触过或使用过stm32，可以使用我的方法。这个方法我放到附录中。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/PK10.png" alt="PK10"></p>
+<h4 id="创建和添加c文件"><a href="#创建和添加c文件" class="headerlink" title="创建和添加c文件"></a>创建和添加c文件</h4><p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk11.png" alt="pk11"></p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/pk12.png" alt="pk12"></p>
+<p>这样子基础工作几乎全部搞定。</p>
+<p>接下来我们就可以开发了。</p>
+<p>下一次更新《LED灯的使用及流水灯的实现》</p>
+<p>以后有机会，我会在文章后添加<strong>视频讲解</strong>。比较麻烦啦。但如果许多的关注和“在看”，一定人气了也许就会加倍努力了啦。</p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h2 id="一、下载-C51相关依赖包"><a href="#一、下载-C51相关依赖包" class="headerlink" title="一、下载 C51相关依赖包"></a>一、下载 C51相关依赖包</h2><p> keil官网下载地址：   <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.keil.com/download/product/">https://www.keil.com/download/product/</a></p>
+<p>这里我给出来哈：官网有些比较慢，信息填写也麻烦。</p>
+<p>链接：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://pan.baidu.com/s/1I_XyuAOLtgBlcwCW_EAuTw">https://pan.baidu.com/s/1I_XyuAOLtgBlcwCW_EAuTw</a><br>提取码：ju98</p>
+<p><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/PK13.png" alt="PK13"></p>
+<p>填写好里面的表单，我们便可以下载资料了。</p>
+<h3 id="安装包与库文件"><a href="#安装包与库文件" class="headerlink" title="安装包与库文件"></a>安装包与库文件</h3><p>默认配置安装即可，安装位置一般会标出的。</p>
+<p>然后就可以了，进入创建项目时，便会有80c51的芯片了。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://javis-yu.github.io">于邦震</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://javis-yu.github.io/archives/b256b6b7.html">https://javis-yu.github.io/archives/b256b6b7.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://javis-yu.github.io" target="_blank">Javis's Blogs</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6277c3fcf92f7961" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/archives/570258ab.html"><img class="prev-cover" src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Proteus_keil仿真单片机二</div></div></a></div><div class="next-post pull-right"><a href="/archives/67844827.html"><img class="next-cover" src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Scikit-learn学习</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/headimg.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">于邦震</div><div class="author-info__description">一个苦逼的二本大学生挣扎的历史</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Javis-Yu"><i class="fab fa-github"></i><span>我的GitHub 一起玩丫😘~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Javis-Yu" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yubangzhenmo@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://user.qzone.qq.com/1213695387" rel="external nofollow noreferrer" target="_blank" title="QQ：1213695387"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://mp.weixin.qq.com/s/I-0GQGbZmyjvwCht4vdwCw" rel="external nofollow noreferrer" target="_blank" title="微信公众号：浮生有雨秃头路"><i class="fa-brands fa-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">保证会持续更新有意思的知识🤯，不过希望您们喜欢🥴！！可以在留言里告诉我🥳，说不定下一个就更新你想知道的内容哦☕！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Proteus-%E5%92%8C-Keil-%E2%80%93-gt-%E6%A8%A1%E6%8B%9F%E5%8D%95%E7%89%87%E6%9C%BA"><span class="toc-number">1.</span> <span class="toc-text">Proteus 和 Keil –&gt;模拟单片机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Proteus"><span class="toc-number">1.1.</span> <span class="toc-text">Proteus</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keil"><span class="toc-number">1.2.</span> <span class="toc-text">Keil</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">配置软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.</span> <span class="toc-text">软件使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Proteus-1"><span class="toc-number">1.4.1.</span> <span class="toc-text">Proteus</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%85%83%E4%BB%B6%E5%92%8C%E4%BD%BF%E7%94%A8%E5%85%83%E4%BB%B6"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">添加元件和使用元件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Keil-1"><span class="toc-number">1.4.2.</span> <span class="toc-text">Keil</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">创建项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E6%B7%BB%E5%8A%A0c%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">创建和添加c文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%BD%95"><span class="toc-number">1.5.</span> <span class="toc-text">附录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD-C51%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E5%8C%85"><span class="toc-number">1.6.</span> <span class="toc-text">一、下载 C51相关依赖包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%8C%85%E4%B8%8E%E5%BA%93%E6%96%87%E4%BB%B6"><span class="toc-number">1.6.1.</span> <span class="toc-text">安装包与库文件</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/4a17b156.html" title="Hello World"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/archives/4a17b156.html" title="Hello World">Hello World</a><time datetime="2022-05-08T16:34:28.389Z" title="发表于 2022-05-09 00:34:28">2022-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/e2465b5f.html" title="这是第一个尝试"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这是第一个尝试"/></a><div class="content"><a class="title" href="/archives/e2465b5f.html" title="这是第一个尝试">这是第一个尝试</a><time datetime="2022-05-08T16:34:28.387Z" title="发表于 2022-05-09 00:34:28">2022-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/d44ed278.html" title="LCD1602程序"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LCD1602程序"/></a><div class="content"><a class="title" href="/archives/d44ed278.html" title="LCD1602程序">LCD1602程序</a><time datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/570258ab.html" title="Proteus_keil仿真单片机二"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Proteus_keil仿真单片机二"/></a><div class="content"><a class="title" href="/archives/570258ab.html" title="Proteus_keil仿真单片机二">Proteus_keil仿真单片机二</a><time datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/b256b6b7.html" title="Proteus 和 Keil --&gt;模拟单片机"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Proteus 和 Keil --&gt;模拟单片机"/></a><div class="content"><a class="title" href="/archives/b256b6b7.html" title="Proteus 和 Keil --&gt;模拟单片机">Proteus 和 Keil --&gt;模拟单片机</a><time datetime="2020-08-05T04:34:45.000Z" title="发表于 2020-08-05 12:34:45">2020-08-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2022 By 于邦震</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">苦逼大学生向您问好 欢迎来到我的 <a href="https://javis-yu.github.io/">小小奋斗史博客</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="486462660" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
