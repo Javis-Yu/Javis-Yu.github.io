@@ -324,6 +324,13 @@
   </url>
   
   <url>
+    <loc>https://javis-yu.github.io/tags/Markdown/</loc>
+    <lastmod>2022-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://javis-yu.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -331,7 +338,7 @@
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/tags/Markdown/</loc>
+    <loc>https://javis-yu.github.io/tags/Blog%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -345,7 +352,7 @@
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/tags/Blog%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://javis-yu.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -365,13 +372,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://javis-yu.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</loc>
-    <lastmod>2022-05-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -382,14 +382,14 @@
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/categories/%E7%AE%97%E6%B3%95%E7%B1%BB/</loc>
+    <loc>https://javis-yu.github.io/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
+    <loc>https://javis-yu.github.io/categories/%E7%AE%97%E6%B3%95%E7%B1%BB/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
