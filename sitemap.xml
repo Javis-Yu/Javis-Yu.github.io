@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://javis-yu.github.io/archives/a8495978.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://javis-yu.github.io/archives/94d4c7d.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://javis-yu.github.io/archives/90c0b5a1.html</loc>
     
     <lastmod>2022-05-10</lastmod>
@@ -39,6 +21,15 @@
   
   <url>
     <loc>https://javis-yu.github.io/archives/bea8daa3.html</loc>
+    
+    <lastmod>2022-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://javis-yu.github.io/archives/3f74665c.html</loc>
     
     <lastmod>2022-05-10</lastmod>
     
@@ -92,7 +83,25 @@
   </url>
   
   <url>
+    <loc>https://javis-yu.github.io/archives/4a17b156.html</loc>
+    
+    <lastmod>2022-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://javis-yu.github.io/archives/b25d1379.html</loc>
+    
+    <lastmod>2022-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://javis-yu.github.io/archives/a8495978.html</loc>
     
     <lastmod>2022-05-10</lastmod>
     
@@ -120,6 +129,15 @@
   
   <url>
     <loc>https://javis-yu.github.io/archives/f8223cc6.html</loc>
+    
+    <lastmod>2022-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://javis-yu.github.io/archives/94d4c7d.html</loc>
     
     <lastmod>2022-05-10</lastmod>
     
@@ -183,24 +201,6 @@
   
   <url>
     <loc>https://javis-yu.github.io/archives/bd38da92.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://javis-yu.github.io/archives/3f74665c.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://javis-yu.github.io/archives/4a17b156.html</loc>
     
     <lastmod>2022-05-10</lastmod>
     
@@ -315,13 +315,6 @@
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/tags/Blog%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2022-05-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://javis-yu.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -330,6 +323,13 @@
   
   <url>
     <loc>https://javis-yu.github.io/tags/mainim%E5%8A%A8%E7%94%BB/</loc>
+    <lastmod>2022-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://javis-yu.github.io/tags/Blog%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -366,14 +366,14 @@
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/categories/%E8%BD%AF%E4%BB%B6%E7%B1%BB/</loc>
+    <loc>https://javis-yu.github.io/categories/%E7%AE%97%E6%B3%95%E7%B1%BB/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://javis-yu.github.io/categories/%E7%AE%97%E6%B3%95%E7%B1%BB/</loc>
+    <loc>https://javis-yu.github.io/categories/%E8%BD%AF%E4%BB%B6%E7%B1%BB/</loc>
     <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
