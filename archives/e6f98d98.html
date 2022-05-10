@@ -1,0 +1,1009 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Typora基础 | Javis's Blogs</title><meta name="keywords" content="Markdown"><meta name="author" content="于邦震"><meta name="copyright" content="于邦震"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Markdown学习与Typora使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora基础">
+<meta property="og:url" content="https://javis-yu.github.io/archives/e6f98d98.html">
+<meta property="og:site_name" content="Javis&#39;s Blogs">
+<meta property="og:description" content="Markdown学习与Typora使用">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510183338.png">
+<meta property="article:published_time" content="2019-10-03T03:44:15.000Z">
+<meta property="article:modified_time" content="2022-05-10T10:37:06.624Z">
+<meta property="article:author" content="于邦震">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510183338.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://javis-yu.github.io/archives/e6f98d98"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-6F0sHObQQP"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?da270e768783141ff6a72798583e77b9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Typora基础',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-10 18:37:06'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Javis's Blogs" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/headimg.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/list/"><i class="fa-fw fa-solid fa-list-check"></i><span> 个人计划</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 个人项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/project/"><i class="fa-fw fa-solid fa-virus-covid"></i><span> 疫情图鉴</span></a></li><li><a class="site-page child" href="/project2/"><i class="fa-fw fa-solid fa-square-parking"></i><span> 立体停车库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-head-side-cough"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-heart"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/love/"><i class="fa-fw fa-solid fa-face-kiss-wink-heart"></i><span> 感情</span></a></div><div class="menus_item"><a class="site-page" href="/money/"><i class="fa-fw fa-solid fa-sack-dollar"></i><span> 打赏</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-star"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510183338.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Javis's Blogs</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/list/"><i class="fa-fw fa-solid fa-list-check"></i><span> 个人计划</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-screwdriver-wrench"></i><span> 个人项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/project/"><i class="fa-fw fa-solid fa-virus-covid"></i><span> 疫情图鉴</span></a></li><li><a class="site-page child" href="/project2/"><i class="fa-fw fa-solid fa-square-parking"></i><span> 立体停车库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-head-side-cough"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-heart"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/love/"><i class="fa-fw fa-solid fa-face-kiss-wink-heart"></i><span> 感情</span></a></div><div class="menus_item"><a class="site-page" href="/money/"><i class="fa-fw fa-solid fa-sack-dollar"></i><span> 打赏</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-star"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Typora基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-10-03T03:44:15.000Z" title="发表于 2019-10-03 11:44:15">2019-10-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-10T10:37:06.624Z" title="更新于 2022-05-10 18:37:06">2022-05-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/">工具类</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Typora基础（使用篇）"><a href="#Typora基础（使用篇）" class="headerlink" title="Typora基础（使用篇）"></a>Typora基础（使用篇）</h1><blockquote>
+<p>Typora让你像写Word一样行云流水<br>(特别提醒(一定使用英文半角符号))</p>
+</blockquote>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Typora是一款轻便简洁的Markdown编辑器，支持即时渲染技术，这也是与其他Markdown编辑器最显著的区别。即时渲染使得你写Markdown就想是写Word文档一样流畅自如，不像其他编辑器的有编辑栏和显示栏。</p>
+<ul>
+<li>Markdown的语法因不同的解析器或编辑器而异，Typora使用的是<a target="_blank" rel="noopener external nofollow noreferrer" href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">GitHub Flavored Markdown</a>。</li>
+</ul>
+<h2 id="Markdown介绍"><a href="#Markdown介绍" class="headerlink" title="Markdown介绍"></a>Markdown介绍</h2><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</p>
+<p>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。</p>
+<p>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。</p>
+<p>Markdown 编写的文档后缀为 <code>.md</code>, <code>.markdown</code>。</p>
+<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><ul>
+<li>&#x3D;&#x3D;加粗&#x3D;&#x3D;：                 			<code>Ctrl + B</code></li>
+<li>标题：                             <code>Ctrl + H</code></li>
+<li>插入链接：                      <code>Ctrl + K</code></li>
+<li>插入代码：                      <code>Ctrl + Shift + C</code> </li>
+<li>行内代码：                      <code>Ctrl + Shift + K</code></li>
+<li>插入图片：                      <code>Ctrl + Shift + I</code></li>
+<li>无序列表：                      <code>Ctrl + Shift + L</code> </li>
+<li>撤销：                             <code>Ctrl + Z</code></li>
+<li>一级标题：                      <code>Ctrl + 1~6</code></li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">Typora快捷键整合</span><br><span class="line"><span class="string">``</span><span class="string">`</span></span><br><span class="line"><span class="string">Ctrl+1  		一阶标题    </span></span><br><span class="line"><span class="string">Ctrl+2  		二阶标题    </span></span><br><span class="line"><span class="string">Ctrl+3  		三阶标题    </span></span><br><span class="line"><span class="string">Ctrl+4  		四阶标题    </span></span><br><span class="line"><span class="string">Ctrl+5  		五阶标题    </span></span><br><span class="line"><span class="string">Ctrl+6  		六阶标题    </span></span><br><span class="line"><span class="string">Ctrl+B  		字体加粗</span></span><br><span class="line"><span class="string">Ctrl+I  		字体倾斜</span></span><br><span class="line"><span class="string">Ctrl+U  		下划线</span></span><br><span class="line"><span class="string">Ctrl+Home   	返回Typora顶部</span></span><br><span class="line"><span class="string">Ctrl+End    	返回Typora底部</span></span><br><span class="line"><span class="string">Ctrl+T  		创建表格</span></span><br><span class="line"><span class="string">Ctrl+L  		选中某句话   </span></span><br><span class="line"><span class="string">Ctrl+K  		创建超链接</span></span><br><span class="line"><span class="string">Ctrl+D  		选中某个单词  </span></span><br><span class="line"><span class="string">Ctrl+E  		选中相同格式的文字  </span></span><br><span class="line"><span class="string">Ctrl+H  		搜索并替换</span></span><br><span class="line"><span class="string">Ctrl+F  		搜索</span></span><br><span class="line"><span class="string">Alt+Shift+5 	删除线 </span></span><br><span class="line"><span class="string">Ctrl+Shift+I    插入图片</span></span><br><span class="line"><span class="string">Ctrl+Shift+M 	公式块 </span></span><br><span class="line"><span class="string">Ctrl+Shift+Q    引用</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">一些实体符号需要在实体符号之前加”\”才能够显示(很像程序语言的‘转义字符’)</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="标题级别"><a href="#标题级别" class="headerlink" title="标题级别"></a>标题级别</h3><p>使用#号键1~6个#可以选择标题级数</p>
+<p># 一级标题 快捷键为 Ctrl + 1<br>## 二级标题 快捷键为 Ctrl + 2<br>……<br>###### 六级标题 快捷键为 Ctrl + 6</p>
+<h3 id="引用文字-gt"><a href="#引用文字-gt" class="headerlink" title="引用文字  &gt;"></a>引用文字  &gt;</h3><p>&gt; + 空格 + 引用文字</p>
+<blockquote>
+<p>如下形式</p>
+</blockquote>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>使用 * + - 都可以创建一个无序列表</p>
+<ul>
+<li><code>* 空格 引用文字</code></li>
+</ul>
+<ul>
+<li><p><code>+ 空格 引用文字</code></p>
+</li>
+<li><p><code>- 空格 引用文字</code></p>
+</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>使用 1. 2. 3. 创建有序列表(与word有点像)</p>
+<ol>
+<li><p>AAA</p>
+</li>
+<li><p>BBB</p>
+</li>
+<li><p>CCC</p>
+</li>
+</ol>
+<h3 id="代码块-反引号-96"><a href="#代码块-反引号-96" class="headerlink" title="代码块  反引号&#96;"></a>代码块  反引号&#96;</h3><p>在Typora中插入程序代码的方式有两种：</p>
+<ul>
+<li>短：使用反引号&#96;&#96;（即 ~ 键 Tab键上方）<code>。</code>就像这样子短一点的&#96;</li>
+<li>长：插入多行代码输入<em><strong>3个反引号 (&#96;)+ 回车</strong></em>，并在后面选择一个语言名称即可实现语法高亮。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">helloworld</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;hello, world!&quot;</span>)</span><br><span class="line">(这里使用python语法高亮)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="数学表达式（会有公式篇进行细致讲解）"><a href="#数学表达式（会有公式篇进行细致讲解）" class="headerlink" title="数学表达式（会有公式篇进行细致讲解）$$"></a>数学表达式（会有公式篇进行细致讲解）<code>$$</code></h3><p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。根据需要加载 Mathjax 对数学公式进行渲染。</p>
+<p><em><strong>按下 <code>$$</code>，然后按下回车键，即可进行数学公式的编辑。</strong></em>（如下形式）</p>
+<ul>
+<li>$$ 之间的便是要打的代码</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\mathbf&#123;V&#125;_1\times\mathbf&#123;V&#125;_2 = \mathbf&#123;X&#125;_3</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="插入表格Ctrl-T"><a href="#插入表格Ctrl-T" class="headerlink" title="插入表格Ctrl + T"></a>插入表格<code>Ctrl + T</code></h3><p>输入 <code>| 表头1 | 表头2 |</code>并回车。即可创建一个包含2列表。或快捷键 <code>Ctrl + T</code>弹出对话框。</p>
+<table>
+<thead>
+<tr>
+<th align="center">id</th>
+<th align="center">number</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<ul>
+<li>不管是哪种方式，第一行为表头，第二行为分割表头和主体部分，第三行开始每一行为一个表格行</li>
+<li>列与列之间用管道符号<code>|</code> 隔开</li>
+<li>还可设置对齐方式(表头与内容之间)，如果不使用对齐标记，内容默认左对齐，表头居中对齐<ul>
+<li>左对齐 ：|</li>
+<li>右对齐 |：</li>
+<li>中对齐 ：|：</li>
+</ul>
+</li>
+<li>为了美观，可以使用空格对齐不同行的单元格，并在左右两侧都使用 | 来标记单元格边界</li>
+<li>为了使 Markdown 更清晰，| 和 - 两侧需要至少有一个空格（最左侧和最右侧的 | 外就不需要了）。</li>
+</ul>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><p>这个例子的脚注为[^1]。写法为：[ ^1]   </p>
+<blockquote>
+<p> e.g. [^关注我们][^关注我们]</p>
+</blockquote>
+<p>注意：脚注内容可为任意字符，包括中文。</p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>输入 <code>***</code> 或者 <code>---</code> 再按回车即可绘制一条水平线，如下：</p>
+<hr>
+<h3 id="目录（TOC）"><a href="#目录（TOC）" class="headerlink" title="目录（TOC）"></a>目录（TOC）</h3><p>输入 <code>[ toc ]</code> 然后回车，即可创建一个“目录”。TOC从文档中提取所有标题，其内容将自动更新。</p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><h4 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h4><p>这是一个带有标题属性的 <code>[链接](http://example.com/ &quot;标题&quot;)</code><br>这是一个没有标题属性的 <code>[链接](http://example.net/)</code></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://example.com/" title="标题">链接</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://example.net/">链接</a></p>
+<p>虽然看起来没啥区别</p>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p>[读写走停]:<a target="_blank" rel="noopener external nofollow noreferrer" href="http://guizhidaoshishenme.com/">http://guizhidaoshishenme.com</a>	“关注我们”<br>[id]: <a target="_blank" rel="noopener external nofollow noreferrer" href="http://example.com/">http://example.com/</a>  “Title Optional”</p>
+<h3 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h3><p>Typora允许用&lt;括号括起来&gt;, 把URL作为链接插入。</p>
+<p>Typora还会自动链接标准网址。</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://guizhidaoshishenme.com/">http://guizhidaoshishenme.com</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![显示的文字](C:\Users\Hider\Desktop\echart.png &quot;图片标题&quot;)</span><br><span class="line">![显示的文字](C:\Users\Hider\Desktop\echart.png)</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>可以拖进来，或者复制粘贴进来</strong></em>          </p>
+<p> 前情回顾： 复制粘贴的方式可以使用  <strong>snipaste</strong>  是个应用</p>
+<h3 id="斜体-单个星号"><a href="#斜体-单个星号" class="headerlink" title="斜体 *单个星号*"></a>斜体 <code>*单个星号*</code></h3><p>使用 <code>*单个星号*</code> 或者 <code>_单下划线_</code> 可以字体倾斜。快捷键 <code>Ctrl + I</code></p>
+<p><em>斜体</em></p>
+<h3 id="加粗-两个星号"><a href="#加粗-两个星号" class="headerlink" title="加粗**两个星号**"></a>加粗<code>**两个星号**</code></h3><p>使用 <code>**两个星号**</code> 或者 <code>__两个下划线__</code> 可以字体加粗。快捷键 <code>Ctrl + B</code></p>
+<p><strong>加粗</strong></p>
+<h3 id="加粗斜体-加粗斜体"><a href="#加粗斜体-加粗斜体" class="headerlink" title="加粗斜体***加粗斜体***"></a>加粗斜体<code>***加粗斜体***</code></h3><p>使用<code>***加粗斜体***</code>可以加粗斜体。</p>
+<p><em><strong>加粗斜体</strong></em></p>
+<h3 id="删除线-Alt-Shift-5"><a href="#删除线-Alt-Shift-5" class="headerlink" title="删除线 Alt + Shift + 5"></a>删除线 <code>Alt + Shift + 5</code></h3><p>使用<code>~~删除线~~</code> 或快捷键 <code>Alt + Shift + 5</code></p>
+<p><del>展示删除线</del></p>
+<h3 id="下划线-Ctrl-U"><a href="#下划线-Ctrl-U" class="headerlink" title="下划线  Ctrl + U"></a>下划线  <code>Ctrl + U</code></h3><p>通过<code>&lt;u&gt;下划线的内容&lt;/u&gt;</code> 或者 快捷键<code>Ctrl + U</code>可实现下划线</p>
+<p><u>下划线的内容</u></p>
+<h3 id="表情符号-："><a href="#表情符号-：" class="headerlink" title="表情符号   ："></a>表情符号   <code>：</code></h3><p>&#x3D;&#x3D;科普&#x3D;&#x3D;：window电脑的中文输入法下：按<code>Ctrl + Shift + B</code>    <em>便可出现微软自带的  emoji表情</em></p>
+<p>Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。</p>
+<p>一定是英文的<code>：</code></p>
+<p>:smile   </p>
+<p>😺</p>
+<h3 id="下标-lt-sub-gt-文本-lt-sub-gt"><a href="#下标-lt-sub-gt-文本-lt-sub-gt" class="headerlink" title="下标&lt;sub&gt;文本&lt;/sub&gt;"></a>下标<code>&lt;sub&gt;文本&lt;/sub&gt;</code></h3><p>可以使用 <sub>eg.</sub><code>&lt;sub&gt;文本&lt;/sub&gt;</code>实现下标。</p>
+<p>例如：H<sub>2</sub>O</p>
+<h3 id="上标-lt-sup-gt-文本-lt-sup-gt"><a href="#上标-lt-sup-gt-文本-lt-sup-gt" class="headerlink" title="上标&lt;sup&gt;文本&lt;/sup&gt;"></a>上标<code>&lt;sup&gt;文本&lt;/sup&gt;</code></h3><p>可以使用<code>&lt;sup&gt;文本&lt;/sup&gt;</code>实现上标。</p>
+<p>X<sup>2</sup>+x&#x3D;1</p>
+<h3 id="高亮-高亮"><a href="#高亮-高亮" class="headerlink" title="高亮==高亮=="></a>高亮<code>==高亮==</code></h3><p><code>==高亮==</code></p>
+<p>&#x3D;&#x3D;我是高亮&#x3D;&#x3D;</p>
+<h3 id="文本居中-lt-center-gt-lt-center-gt"><a href="#文本居中-lt-center-gt-lt-center-gt" class="headerlink" title="文本居中&lt;center&gt;&lt;/center&gt;"></a>文本居中<code>&lt;center&gt;&lt;/center&gt;</code></h3><p>使用 <code>&lt;center&gt;这是要居中的内容&lt;/center&gt;</code>可以使文本居中</p>
+<center>这是要居中的文本内容</center>
+
+<h3 id="换行符Enter"><a href="#换行符Enter" class="headerlink" title="换行符Enter"></a>换行符<code>Enter</code></h3><p>或者可以使用<code> &lt;br/&gt;</code>实现换行。html语法</p>
+<h3 id="转义"><a href="#转义" class="headerlink" title="转义 \"></a>转义 \</h3><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">`   反引号</span><br><span class="line"><span class="bullet">*</span>   星号</span><br><span class="line"><span class="emphasis">_   下划线</span></span><br><span class="line"><span class="emphasis">&#123;&#125;  花括号</span></span><br><span class="line"><span class="emphasis">[]  方括号</span></span><br><span class="line"><span class="emphasis">()  小括号</span></span><br><span class="line"><span class="emphasis">#   井字号</span></span><br><span class="line"><span class="emphasis">+   加号</span></span><br><span class="line"><span class="emphasis">-   减号</span></span><br><span class="line"><span class="emphasis">.   英文句点</span></span><br><span class="line"><span class="emphasis">!   感叹号</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>支持HTML</p>
+<p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</p>
+<p>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等 </p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li><p>建议打开<em><strong>大纲视图  <code>Ctrl + Shift + 1</code></strong></em></p>
+</li>
+<li><p>许多命令可以，右键可查询</p>
+<h1 id="HTML特殊字符编码对照表"><a href="#HTML特殊字符编码对照表" class="headerlink" title="HTML特殊字符编码对照表"></a>HTML特殊字符编码对照表</h1></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">特殊符号</th>
+<th align="center">命名实体</th>
+<th align="center">十进制编码</th>
+<th align="center">特殊符号</th>
+<th align="center">命名实体</th>
+<th align="center">十进制编码</th>
+<th align="center">特殊符号</th>
+<th align="center">命名实体</th>
+<th align="center">十进制编码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Α</td>
+<td align="center">&amp;Alpha;</td>
+<td align="center">&amp;#913;</td>
+<td align="center">Β</td>
+<td align="center">&amp;Beta;</td>
+<td align="center">&amp;#914;</td>
+<td align="center">Γ</td>
+<td align="center">&amp;Gamma;</td>
+<td align="center">&amp;#915;</td>
+</tr>
+<tr>
+<td align="center">Δ</td>
+<td align="center">&amp;Delta;</td>
+<td align="center">&amp;#916;</td>
+<td align="center">Ε</td>
+<td align="center">&amp;Epsilon;</td>
+<td align="center">&amp;#917;</td>
+<td align="center">Ζ</td>
+<td align="center">&amp;Zeta;</td>
+<td align="center">&amp;#918;</td>
+</tr>
+<tr>
+<td align="center">Η</td>
+<td align="center">&amp;Eta;</td>
+<td align="center">&amp;#919;</td>
+<td align="center">Θ</td>
+<td align="center">&amp;Theta;</td>
+<td align="center">&amp;#920;</td>
+<td align="center">Ι</td>
+<td align="center">&amp;Iota;</td>
+<td align="center">&amp;#921;</td>
+</tr>
+<tr>
+<td align="center">Κ</td>
+<td align="center">&amp;Kappa;</td>
+<td align="center">&amp;#922;</td>
+<td align="center">Λ</td>
+<td align="center">&amp;Lambda;</td>
+<td align="center">&amp;#923;</td>
+<td align="center">Μ</td>
+<td align="center">&amp;Mu;</td>
+<td align="center">&amp;#924;</td>
+</tr>
+<tr>
+<td align="center">Ν</td>
+<td align="center">&amp;Nu;</td>
+<td align="center">&amp;#925;</td>
+<td align="center">Ξ</td>
+<td align="center">&amp;Xi;</td>
+<td align="center">&amp;#926;</td>
+<td align="center">Ο</td>
+<td align="center">&amp;Omicron;</td>
+<td align="center">&amp;#927;</td>
+</tr>
+<tr>
+<td align="center">Π</td>
+<td align="center">&amp;Pi;</td>
+<td align="center">&amp;#928;</td>
+<td align="center">Ρ</td>
+<td align="center">&amp;Rho;</td>
+<td align="center">&amp;#929;</td>
+<td align="center">Σ</td>
+<td align="center">&amp;Sigma;</td>
+<td align="center">&amp;#931;</td>
+</tr>
+<tr>
+<td align="center">Τ</td>
+<td align="center">&amp;Tau;</td>
+<td align="center">&amp;#932;</td>
+<td align="center">Υ</td>
+<td align="center">&amp;Upsilon;</td>
+<td align="center">&amp;#933;</td>
+<td align="center">Φ</td>
+<td align="center">&amp;Phi;</td>
+<td align="center">&amp;#934;</td>
+</tr>
+<tr>
+<td align="center">Χ</td>
+<td align="center">&amp;Chi;</td>
+<td align="center">&amp;#935;</td>
+<td align="center">Ψ</td>
+<td align="center">&amp;Psi;</td>
+<td align="center">&amp;#936;</td>
+<td align="center">Ω</td>
+<td align="center">&amp;Omega;</td>
+<td align="center">&amp;#937;</td>
+</tr>
+<tr>
+<td align="center">α</td>
+<td align="center">&amp;alpha;</td>
+<td align="center">&amp;#945;</td>
+<td align="center">β</td>
+<td align="center">&amp;beta;</td>
+<td align="center">&amp;#946;</td>
+<td align="center">γ</td>
+<td align="center">&amp;gamma;</td>
+<td align="center">&amp;#947;</td>
+</tr>
+<tr>
+<td align="center">δ</td>
+<td align="center">&amp;delta;</td>
+<td align="center">&amp;#948;</td>
+<td align="center">ε</td>
+<td align="center">&amp;epsilon;</td>
+<td align="center">&amp;#949;</td>
+<td align="center">ζ</td>
+<td align="center">&amp;zeta;</td>
+<td align="center">&amp;#950;</td>
+</tr>
+<tr>
+<td align="center">η</td>
+<td align="center">&amp;eta;</td>
+<td align="center">&amp;#951;</td>
+<td align="center">θ</td>
+<td align="center">&amp;theta;</td>
+<td align="center">&amp;#952;</td>
+<td align="center">ι</td>
+<td align="center">&amp;iota;</td>
+<td align="center">&amp;#953;</td>
+</tr>
+<tr>
+<td align="center">κ</td>
+<td align="center">&amp;kappa;</td>
+<td align="center">&amp;#954;</td>
+<td align="center">λ</td>
+<td align="center">&amp;lambda;</td>
+<td align="center">&amp;#955;</td>
+<td align="center">μ</td>
+<td align="center">&amp;mu;</td>
+<td align="center">&amp;#956;</td>
+</tr>
+<tr>
+<td align="center">ν</td>
+<td align="center">&amp;nu;</td>
+<td align="center">&amp;#957;</td>
+<td align="center">ξ</td>
+<td align="center">&amp;xi;</td>
+<td align="center">&amp;#958;</td>
+<td align="center">ο</td>
+<td align="center">&amp;omicron;</td>
+<td align="center">&amp;#959;</td>
+</tr>
+<tr>
+<td align="center">π</td>
+<td align="center">&amp;pi;</td>
+<td align="center">&amp;#960;</td>
+<td align="center">ρ</td>
+<td align="center">&amp;rho;</td>
+<td align="center">&amp;#961;</td>
+<td align="center">ς</td>
+<td align="center">&amp;sigmaf;</td>
+<td align="center">&amp;#962;</td>
+</tr>
+<tr>
+<td align="center">σ</td>
+<td align="center">&amp;sigma;</td>
+<td align="center">&amp;#963;</td>
+<td align="center">τ</td>
+<td align="center">&amp;tau;</td>
+<td align="center">&amp;#964;</td>
+<td align="center">υ</td>
+<td align="center">&amp;upsilon;</td>
+<td align="center">&amp;#965;</td>
+</tr>
+<tr>
+<td align="center">φ</td>
+<td align="center">&amp;phi;</td>
+<td align="center">&amp;#966;</td>
+<td align="center">χ</td>
+<td align="center">&amp;chi;</td>
+<td align="center">&amp;#967;</td>
+<td align="center">ψ</td>
+<td align="center">&amp;psi;</td>
+<td align="center">&amp;#968;</td>
+</tr>
+<tr>
+<td align="center">ω</td>
+<td align="center">&amp;omega;</td>
+<td align="center">&amp;#969;</td>
+<td align="center">ϑ</td>
+<td align="center">&amp;thetasym;</td>
+<td align="center">&amp;#977;</td>
+<td align="center">ϒ</td>
+<td align="center">&amp;upsih;</td>
+<td align="center">&amp;#978;</td>
+</tr>
+<tr>
+<td align="center">ϖ</td>
+<td align="center">&amp;piv;</td>
+<td align="center">&amp;#982;</td>
+<td align="center">•</td>
+<td align="center">&amp;bull;</td>
+<td align="center">&amp;#8226;</td>
+<td align="center">…</td>
+<td align="center">&amp;hellip;</td>
+<td align="center">&amp;#8230;</td>
+</tr>
+<tr>
+<td align="center">′</td>
+<td align="center">&amp;prime;</td>
+<td align="center">&amp;#8242;</td>
+<td align="center">″</td>
+<td align="center">&amp;Prime;</td>
+<td align="center">&amp;#8243;</td>
+<td align="center">‾</td>
+<td align="center">&amp;oline;</td>
+<td align="center">&amp;#8254;</td>
+</tr>
+<tr>
+<td align="center">⁄</td>
+<td align="center">&amp;frasl;</td>
+<td align="center">&amp;#8260;</td>
+<td align="center">℘</td>
+<td align="center">&amp;weierp;</td>
+<td align="center">&amp;#8472;</td>
+<td align="center">ℑ</td>
+<td align="center">&amp;image;</td>
+<td align="center">&amp;#8465;</td>
+</tr>
+<tr>
+<td align="center">ℜ</td>
+<td align="center">&amp;real;</td>
+<td align="center">&amp;#8476;</td>
+<td align="center">™</td>
+<td align="center">&amp;trade;</td>
+<td align="center">&amp;#8482;</td>
+<td align="center">ℵ</td>
+<td align="center">&amp;alefsym;</td>
+<td align="center">&amp;#8501;</td>
+</tr>
+<tr>
+<td align="center">←</td>
+<td align="center">&amp;larr;</td>
+<td align="center">&amp;#8592;</td>
+<td align="center">↑</td>
+<td align="center">&amp;uarr;</td>
+<td align="center">&amp;#8593;</td>
+<td align="center">→</td>
+<td align="center">&amp;rarr;</td>
+<td align="center">&amp;#8594;</td>
+</tr>
+<tr>
+<td align="center">↓</td>
+<td align="center">&amp;darr;</td>
+<td align="center">&amp;#8595;</td>
+<td align="center">↔</td>
+<td align="center">&amp;harr;</td>
+<td align="center">&amp;#8596;</td>
+<td align="center">↵</td>
+<td align="center">&amp;crarr;</td>
+<td align="center">&amp;#8629;</td>
+</tr>
+<tr>
+<td align="center">⇐</td>
+<td align="center">&amp;lArr;</td>
+<td align="center">&amp;#8656;</td>
+<td align="center">⇑</td>
+<td align="center">&amp;uArr;</td>
+<td align="center">&amp;#8657;</td>
+<td align="center">⇒</td>
+<td align="center">&amp;rArr;</td>
+<td align="center">&amp;#8658;</td>
+</tr>
+<tr>
+<td align="center">⇓</td>
+<td align="center">&amp;dArr;</td>
+<td align="center">&amp;#8659;</td>
+<td align="center">⇔</td>
+<td align="center">&amp;hArr;</td>
+<td align="center">&amp;#8660;</td>
+<td align="center">∀</td>
+<td align="center">&amp;forall;</td>
+<td align="center">&amp;#8704;</td>
+</tr>
+<tr>
+<td align="center">∂</td>
+<td align="center">&amp;part;</td>
+<td align="center">&amp;#8706;</td>
+<td align="center">∃</td>
+<td align="center">&amp;exist;</td>
+<td align="center">&amp;#8707;</td>
+<td align="center">∅</td>
+<td align="center">&amp;empty;</td>
+<td align="center">&amp;#8709;</td>
+</tr>
+<tr>
+<td align="center">∇</td>
+<td align="center">&amp;nabla;</td>
+<td align="center">&amp;#8711;</td>
+<td align="center">∈</td>
+<td align="center">&amp;isin;</td>
+<td align="center">&amp;#8712;</td>
+<td align="center">∉</td>
+<td align="center">&amp;notin;</td>
+<td align="center">&amp;#8713;</td>
+</tr>
+<tr>
+<td align="center">∋</td>
+<td align="center">&amp;ni;</td>
+<td align="center">&amp;#8715;</td>
+<td align="center">∏</td>
+<td align="center">&amp;prod;</td>
+<td align="center">&amp;#8719;</td>
+<td align="center">∑</td>
+<td align="center">&amp;sum;</td>
+<td align="center">&amp;#8722;</td>
+</tr>
+<tr>
+<td align="center">−</td>
+<td align="center">&amp;minus;</td>
+<td align="center">&amp;#8722;</td>
+<td align="center">∗</td>
+<td align="center">&amp;lowast;</td>
+<td align="center">&amp;#8727;</td>
+<td align="center">√</td>
+<td align="center">&amp;radic;</td>
+<td align="center">&amp;#8730;</td>
+</tr>
+<tr>
+<td align="center">∝</td>
+<td align="center">&amp;prop;</td>
+<td align="center">&amp;#8733;</td>
+<td align="center">∞</td>
+<td align="center">&amp;infin;</td>
+<td align="center">&amp;#8734;</td>
+<td align="center">∠</td>
+<td align="center">&amp;ang;</td>
+<td align="center">&amp;#8736;</td>
+</tr>
+<tr>
+<td align="center">∧</td>
+<td align="center">&amp;and;</td>
+<td align="center">&amp;#8869;</td>
+<td align="center">∨</td>
+<td align="center">&amp;or;</td>
+<td align="center">&amp;#8870;</td>
+<td align="center">∩</td>
+<td align="center">&amp;cap;</td>
+<td align="center">&amp;#8745;</td>
+</tr>
+<tr>
+<td align="center">∪</td>
+<td align="center">&amp;cup;</td>
+<td align="center">&amp;#8746;</td>
+<td align="center">∫</td>
+<td align="center">&amp;int;</td>
+<td align="center">&amp;#8747;</td>
+<td align="center">∴</td>
+<td align="center">&amp;there4;</td>
+<td align="center">&amp;#8756;</td>
+</tr>
+<tr>
+<td align="center">∼</td>
+<td align="center">&amp;sim;</td>
+<td align="center">&amp;#8764;</td>
+<td align="center">≅</td>
+<td align="center">&amp;cong;</td>
+<td align="center">&amp;#8773;</td>
+<td align="center">≈</td>
+<td align="center">&amp;asymp;</td>
+<td align="center">&amp;#8773;</td>
+</tr>
+<tr>
+<td align="center">≠</td>
+<td align="center">&amp;ne;</td>
+<td align="center">&amp;#8800;</td>
+<td align="center">≡</td>
+<td align="center">&amp;equiv;</td>
+<td align="center">&amp;#8801;</td>
+<td align="center">≤</td>
+<td align="center">&amp;le;</td>
+<td align="center">&amp;#8804;</td>
+</tr>
+<tr>
+<td align="center">≥</td>
+<td align="center">&amp;ge;</td>
+<td align="center">&amp;#8805;</td>
+<td align="center">⊂</td>
+<td align="center">&amp;sub;</td>
+<td align="center">&amp;#8834;</td>
+<td align="center">⊃</td>
+<td align="center">&amp;sup;</td>
+<td align="center">&amp;#8835;</td>
+</tr>
+<tr>
+<td align="center">⊄</td>
+<td align="center">&amp;nsub;</td>
+<td align="center">&amp;#8836;</td>
+<td align="center">⊆</td>
+<td align="center">&amp;sube;</td>
+<td align="center">&amp;#8838;</td>
+<td align="center">⊇</td>
+<td align="center">&amp;supe;</td>
+<td align="center">&amp;#8839;</td>
+</tr>
+<tr>
+<td align="center">⊕</td>
+<td align="center">&amp;oplus;</td>
+<td align="center">&amp;#8853;</td>
+<td align="center">⊗</td>
+<td align="center">&amp;otimes;</td>
+<td align="center">&amp;#8855;</td>
+<td align="center">⊥</td>
+<td align="center">&amp;perp;</td>
+<td align="center">&amp;#8869;</td>
+</tr>
+<tr>
+<td align="center">⋅</td>
+<td align="center">&amp;sdot;</td>
+<td align="center">&amp;#8901;</td>
+<td align="center">⌈</td>
+<td align="center">&amp;lceil;</td>
+<td align="center">&amp;#8968;</td>
+<td align="center">⌉</td>
+<td align="center">&amp;rceil;</td>
+<td align="center">&amp;#8969;</td>
+</tr>
+<tr>
+<td align="center">⌊</td>
+<td align="center">&amp;lfloor;</td>
+<td align="center">&amp;#8970;</td>
+<td align="center">⌋</td>
+<td align="center">&amp;rfloor;</td>
+<td align="center">&amp;#8971;</td>
+<td align="center">◊</td>
+<td align="center">&amp;loz;</td>
+<td align="center">&amp;#9674;</td>
+</tr>
+<tr>
+<td align="center">♠</td>
+<td align="center">&amp;spades;</td>
+<td align="center">&amp;#9824;</td>
+<td align="center">♣</td>
+<td align="center">&amp;clubs;</td>
+<td align="center">&amp;#9827;</td>
+<td align="center">♥</td>
+<td align="center">&amp;hearts;</td>
+<td align="center">&amp;#9829;</td>
+</tr>
+<tr>
+<td align="center">♦</td>
+<td align="center">&amp;diams;</td>
+<td align="center">&amp;#9830;</td>
+<td align="center">空</td>
+<td align="center">&amp;nbsp;</td>
+<td align="center">&amp;#160;</td>
+<td align="center">¡</td>
+<td align="center">&amp;iexcl;</td>
+<td align="center">&amp;#161;</td>
+</tr>
+<tr>
+<td align="center">¢</td>
+<td align="center">&amp;cent;</td>
+<td align="center">&amp;#162;</td>
+<td align="center">£</td>
+<td align="center">&amp;pound;</td>
+<td align="center">&amp;#163;</td>
+<td align="center">¤</td>
+<td align="center">&amp;curren;</td>
+<td align="center">&amp;#164;</td>
+</tr>
+<tr>
+<td align="center">¥</td>
+<td align="center">&amp;yen;</td>
+<td align="center">&amp;#165;</td>
+<td align="center">¦</td>
+<td align="center">&amp;brvbar;</td>
+<td align="center">&amp;#166;</td>
+<td align="center">§</td>
+<td align="center">&amp;sect;</td>
+<td align="center">&amp;#167;</td>
+</tr>
+<tr>
+<td align="center">¨</td>
+<td align="center">&amp;uml;</td>
+<td align="center">&amp;#168;</td>
+<td align="center">©</td>
+<td align="center">&amp;copy;</td>
+<td align="center">&amp;#169;</td>
+<td align="center">ª</td>
+<td align="center">&amp;ordf;</td>
+<td align="center">&amp;#170;</td>
+</tr>
+<tr>
+<td align="center">«</td>
+<td align="center">&amp;laquo;</td>
+<td align="center">&amp;#171;</td>
+<td align="center">¬</td>
+<td align="center">&amp;not;</td>
+<td align="center">&amp;#172;</td>
+<td align="center">­</td>
+<td align="center">&amp;shy;</td>
+<td align="center">&amp;#173;</td>
+</tr>
+<tr>
+<td align="center">®</td>
+<td align="center">&amp;reg;</td>
+<td align="center">&amp;#174;</td>
+<td align="center">¯</td>
+<td align="center">&amp;macr;</td>
+<td align="center">&amp;#175;</td>
+<td align="center">°</td>
+<td align="center">&amp;deg;</td>
+<td align="center">&amp;#176;</td>
+</tr>
+<tr>
+<td align="center">±</td>
+<td align="center">&amp;plusmn;</td>
+<td align="center">&amp;#177;</td>
+<td align="center">²</td>
+<td align="center">&amp;sup2;</td>
+<td align="center">&amp;#178;</td>
+<td align="center">³</td>
+<td align="center">&amp;sup3;</td>
+<td align="center">&amp;#179;</td>
+</tr>
+<tr>
+<td align="center">´</td>
+<td align="center">&amp;acute;</td>
+<td align="center">&amp;#180;</td>
+<td align="center">µ</td>
+<td align="center">&amp;micro;</td>
+<td align="center">&amp;#181</td>
+<td align="center">“</td>
+<td align="center">&amp;quot;</td>
+<td align="center">&amp;#34;</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td align="center">&amp;lt;</td>
+<td align="center">&amp;#60;</td>
+<td align="center">&gt;</td>
+<td align="center">&amp;gt;</td>
+<td align="center">&amp;#62;</td>
+<td align="center">‘</td>
+<td align="center"></td>
+<td align="center">&amp;#39;</td>
+</tr>
+</tbody></table>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">^</span>表示上标，</span><br><span class="line"><span class="keyword">_</span>表示下标，</span><br><span class="line">如果上（下）标内容多于一个字符就需要使用&#123;&#125;，注意不是( ), 因为( )经常是公式本身组成部分，为避免冲突，所以选用了&#123; &#125; 将其包起来<span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：<span class="variable">$x</span><span class="operator">^</span>&#123;y<span class="operator">^</span>z&#125;<span class="operator">=</span>(<span class="number">1</span><span class="operator">+</span>e<span class="operator">^</span>x)<span class="operator">^</span>&#123;<span class="operator">-</span>2xy<span class="operator">^</span>w&#125;$</span><br><span class="line"></span><br><span class="line">效果：xyz<span class="operator">=</span>(<span class="number">1</span><span class="operator">+</span>ex)<span class="operator">−</span>2xyw </span><br><span class="line">上面输入的上下标都是在字符的右侧，要想在左侧或者两侧都写上下标，那么需要使用\sideset语法<span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：$\sideset&#123;<span class="operator">^</span><span class="number">1_2</span>&#125;&#123;<span class="operator">^</span><span class="number">3_4</span>&#125;\bigotimes$</span><br><span class="line"></span><br><span class="line">效果：<span class="number">12</span><span class="operator">⨂</span><span class="number">34</span> </span><br><span class="line"></span><br><span class="line"><span class="number">3.3</span> 括号和分隔符</span><br><span class="line"></span><br><span class="line">( )和[ ]就是自身了，由于&#123; &#125; 是<span class="type">Tex的元字符，所以表示它自身时需要转义</span><span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：<span class="variable">$f</span>(x,y) <span class="operator">=</span> x<span class="operator">^</span><span class="number">2</span> <span class="operator">+</span> y<span class="operator">^</span><span class="number">2</span>, x\epsilon[<span class="number">0</span>,<span class="number">100</span>]$</span><br><span class="line"></span><br><span class="line">效果：f(x,y)<span class="operator">=</span>x2<span class="operator">+</span>y2,xϵ[<span class="number">0</span>,<span class="number">100</span>] </span><br><span class="line">有时候括号需要大号的，普通括号不好看，此时需要使用\left和\right加大括号的大小<span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：$(\frac&#123;x&#125;&#123;y&#125;)<span class="operator">^</span><span class="number">8</span>，\left(\frac&#123;x&#125;&#123;y&#125;\right)<span class="operator">^</span><span class="number">8</span>$</span><br><span class="line"></span><br><span class="line">效果：(xy)<span class="number">8</span>，(xy)<span class="number">8</span> </span><br><span class="line">\left和\right必须成对出现，对于不显示的一边可以使用 . 代替<span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：$\left.\frac&#123;&#123;\rm d&#125;u&#125;&#123;&#123;\rm d&#125;x&#125; \right<span class="operator">|</span> <span class="keyword">_</span>&#123;x<span class="operator">=</span><span class="number">0</span>&#125;$</span><br><span class="line"></span><br><span class="line">效果：dudx<span class="operator">∣∣</span>x<span class="operator">=</span><span class="number">0</span> </span><br><span class="line"><span class="number">3.4</span> 分数</span><br><span class="line"></span><br><span class="line">使用\frac&#123;分子&#125;&#123;分母&#125;格式，或者 分子\over 分母<span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：$\frac&#123;<span class="number">1</span>&#125;&#123;2x<span class="operator">+</span><span class="number">1</span>&#125;或者<span class="number">1</span>\over&#123;2x<span class="operator">+</span><span class="number">1</span>&#125;$</span><br><span class="line"></span><br><span class="line">效果：12x<span class="operator">+</span><span class="number">1</span>或者12x<span class="operator">+</span><span class="number">1</span> </span><br><span class="line"><span class="number">3.5</span> 开方</span><br><span class="line"></span><br><span class="line">示例：$\sqrt[<span class="number">9</span>]&#123;<span class="number">3</span>&#125;和\sqrt&#123;<span class="number">3</span>&#125;$</span><br><span class="line"></span><br><span class="line">效果：<span class="number">3</span><span class="operator">‾‾√</span><span class="number">9</span> 和 <span class="number">3</span><span class="operator">‾‾√</span> </span><br><span class="line"><span class="number">3.6</span> 省略号</span><br><span class="line"></span><br><span class="line">有两种省略号，\ldots 表示语文本底线对其的省略号，\cdots表示与文本中线对其的省略号<span class="operator">。</span></span><br><span class="line"></span><br><span class="line">示例：<span class="variable">$f</span>(x_1, x_2, \ldots, x_n)<span class="operator">=</span>x_1<span class="operator">^</span><span class="number">2</span> <span class="operator">+</span> x_2<span class="operator">^</span><span class="number">2</span><span class="operator">+</span> \cdots <span class="operator">+</span> x_n<span class="operator">^</span><span class="number">2</span>$</span><br><span class="line"></span><br><span class="line">效果：f(x1,x2,<span class="operator">…</span>,xn)<span class="operator">=</span>x21<span class="operator">+</span>x22<span class="operator">+⋯+</span>x2n </span><br><span class="line"><span class="number">3.7</span> 矢量</span><br><span class="line"></span><br><span class="line">示例：$\vec&#123;a&#125; \cdot \vec&#123;b&#125;<span class="operator">=</span><span class="number">0</span>$</span><br><span class="line"></span><br><span class="line">效果: a⃗ <span class="operator">⋅</span>b⃗ <span class="operator">=</span><span class="number">0</span> </span><br><span class="line"><span class="number">3.8</span> 积分</span><br><span class="line"></span><br><span class="line">示例：$\int_0<span class="operator">^</span>1x<span class="operator">^</span><span class="number">2</span>&#123;\rm d&#125;x $</span><br><span class="line"></span><br><span class="line">效果： <span class="operator">∫</span>10x2dx </span><br><span class="line"><span class="number">3.9</span> 极限</span><br><span class="line"></span><br><span class="line">示例：$\lim_&#123;n\rightarrow<span class="operator">+</span>\infty&#125;\frac&#123;<span class="number">1</span>&#125;&#123;n(n<span class="operator">+</span><span class="number">1</span>)&#125;$</span><br><span class="line"></span><br><span class="line">效果： limn<span class="operator">→+∞</span>1n(n<span class="operator">+</span><span class="number">1</span>) </span><br><span class="line"><span class="number">3.10</span> 累加<span class="operator">、</span>累乘</span><br><span class="line"></span><br><span class="line">示例：$\sum_1<span class="operator">^</span>n\frac&#123;<span class="number">1</span>&#125;&#123;x<span class="operator">^</span><span class="number">2</span>&#125;，\prod_&#123;i<span class="operator">=</span><span class="number">0</span>&#125;<span class="operator">^</span>n\frac&#123;<span class="number">1</span>&#125;&#123;x<span class="operator">^</span><span class="number">2</span>&#125;$</span><br><span class="line"></span><br><span class="line">效果：<span class="operator">∑</span>n11x2， <span class="operator">∏</span>ni<span class="operator">=</span>01x2 </span><br><span class="line"><span class="number">3.11</span> 希腊字母</span><br><span class="line"></span><br><span class="line">希腊字符示例：$$\alpha　<span class="type">A</span>　\beta　<span class="type">B</span>　\gamma　\<span class="type">Gamma</span>　\delta　\<span class="type">Delta</span>　\epsilon　<span class="type">E</span> \varepsilon　　\zeta　<span class="type">Z</span>　\eta　<span class="type">H</span>　\theta　\<span class="type">Theta</span>　\vartheta \iota　<span class="type">I</span>　\kappa　<span class="type">K</span>　\lambda　\<span class="type">Lambda</span>　\mu　<span class="type">M</span>　\nu　<span class="type">N</span> \xi　\<span class="type">Xi</span>　o　<span class="type">O</span>　\pi　\<span class="type">Pi</span>　\varpi　　\rho　<span class="type">P</span> \varrho　　\sigma　\<span class="type">Sigma</span>　\varsigma　　\tau　<span class="type">T</span>　\upsilon　\<span class="type">Upsilon</span> \phi　\<span class="type">Phi</span>　\varphi　　\chi　<span class="type">X</span>　\psi　\<span class="type">Psi</span>　\omega　\<span class="type">Omega</span>$$</span><br><span class="line"></span><br><span class="line">效果：</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">α　<span class="type">A</span>　β　<span class="type">B</span>　γ　Γ　δ　Δ　ϵ　<span class="type">Eε</span>　　ζ　<span class="type">Z</span>　η　<span class="type">H</span>　θ　Θ　ϑι　<span class="type">I</span>　κ　<span class="type">K</span>　λ　Λ　μ　<span class="type">M</span>　ν　<span class="type">Nξ</span>　Ξ　o　<span class="type">O</span>　π　Π　ϖ　　ρ　<span class="type">Pϱ</span>　　σ　Σ　ς　　τ　<span class="type">T</span>　υ　Υϕ　Φ　φ　　χ　<span class="type">X</span>　ψ　Ψ　ω　Ω</span><br><span class="line"></span><br><span class="line"><span class="number">3.12</span> 数学符号大汇总</span><br><span class="line"><span class="operator">±</span> ：\pm </span><br><span class="line"><span class="operator">×</span> ：\times </span><br><span class="line"><span class="operator">÷</span>：\div </span><br><span class="line"><span class="operator">∣</span>：\mid</span><br><span class="line"></span><br><span class="line"><span class="operator">⋅</span>：\cdot </span><br><span class="line"><span class="operator">∘</span>：\circ </span><br><span class="line"><span class="operator">∗</span>: \ast </span><br><span class="line"><span class="operator">⨀</span>：\bigodot </span><br><span class="line"><span class="operator">⨂</span>：\bigotimes </span><br><span class="line"><span class="operator">⨁</span>：\bigoplus </span><br><span class="line"><span class="operator">≤</span>：\leq </span><br><span class="line"><span class="operator">≥</span>：\geq </span><br><span class="line"><span class="operator">≠</span>：\neq </span><br><span class="line"><span class="operator">≈</span>：\approx </span><br><span class="line"><span class="operator">≡</span>：\equiv </span><br><span class="line"><span class="operator">∑</span>：\sum </span><br><span class="line"><span class="operator">∏</span>：\prod </span><br><span class="line"><span class="operator">∐</span>：\coprod</span><br><span class="line"></span><br><span class="line">集合运算符： </span><br><span class="line"><span class="operator">∅</span>：\emptyset </span><br><span class="line"><span class="operator">∈</span>：\<span class="keyword">in</span> </span><br><span class="line"><span class="operator">∉</span>：\notin </span><br><span class="line"><span class="operator">⊂</span>：\subset </span><br><span class="line"><span class="operator">⊃</span> ：\supset </span><br><span class="line"><span class="operator">⊆</span> ：\subseteq </span><br><span class="line"><span class="operator">⊇</span> ：\supseteq </span><br><span class="line"><span class="operator">⋂</span> ：\bigcap </span><br><span class="line"><span class="operator">⋃</span> ：\bigcup </span><br><span class="line"><span class="operator">⋁</span> ：\bigvee </span><br><span class="line"><span class="operator">⋀</span> ：\bigwedge </span><br><span class="line"><span class="operator">⨄</span> ：\biguplus </span><br><span class="line"><span class="operator">⨆</span>：\bigsqcup</span><br><span class="line"></span><br><span class="line">对数运算符： </span><br><span class="line">log ：\log </span><br><span class="line">lg ：\lg </span><br><span class="line">ln ：\ln</span><br><span class="line"></span><br><span class="line">三角运算符： </span><br><span class="line"><span class="operator">⊥</span>：\bot </span><br><span class="line"><span class="operator">∠</span>：\angle </span><br><span class="line"><span class="number">30</span><span class="operator">∘</span>：<span class="number">30</span><span class="operator">^</span>\circ </span><br><span class="line">sin ：\sin </span><br><span class="line">cos ：\cos </span><br><span class="line">tan ：\tan </span><br><span class="line">cot ：\cot </span><br><span class="line">sec ：\sec </span><br><span class="line">csc ：\csc</span><br><span class="line"></span><br><span class="line">微积分运算符： </span><br><span class="line">y<span class="operator">′</span>x：\prime </span><br><span class="line"><span class="operator">∫</span>：\int </span><br><span class="line"><span class="operator">∬</span> ：\iint </span><br><span class="line"><span class="operator">∭</span> ：\iiint </span><br><span class="line"><span class="operator">⨌</span>：\iiiint </span><br><span class="line"><span class="operator">∮</span> ：\oint </span><br><span class="line">lim ：\lim </span><br><span class="line"><span class="operator">∞</span> ：\infty </span><br><span class="line"><span class="operator">∇</span>：\nabla</span><br><span class="line"></span><br><span class="line">逻辑运算符： </span><br><span class="line"><span class="operator">∵</span>：\because </span><br><span class="line"><span class="operator">∴</span> ：\therefore </span><br><span class="line"><span class="operator">∀</span> ：\forall </span><br><span class="line"><span class="operator">∃</span> ：\exists </span><br><span class="line"><span class="operator">≠</span> ：\not<span class="operator">=</span> </span><br><span class="line"><span class="operator">≯</span>：\not<span class="operator">&gt;</span> </span><br><span class="line"><span class="operator">⊄</span>：\not\subset</span><br><span class="line"></span><br><span class="line">戴帽符号： </span><br><span class="line">ŷ ：\hat&#123;y&#125; </span><br><span class="line">yˇ：\check&#123;y&#125; </span><br><span class="line">y˘：\breve&#123;y&#125;</span><br><span class="line"></span><br><span class="line">连线符号： </span><br><span class="line">a<span class="operator">+</span>b<span class="operator">+</span>c<span class="operator">+</span>d<span class="operator">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>：\overline&#123;a<span class="operator">+</span>b<span class="operator">+</span>c<span class="operator">+</span>d&#125; </span><br><span class="line">a<span class="operator">+</span>b<span class="operator">+</span>c<span class="operator">+</span>d<span class="operator">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>：\underline&#123;a<span class="operator">+</span>b<span class="operator">+</span>c<span class="operator">+</span>d&#125; </span><br><span class="line">a<span class="operator">+</span>b<span class="operator">+</span>c<span class="operator">⏟</span><span class="number">1.0</span><span class="operator">+</span>d<span class="number">2.0</span>：\overbrace&#123;a<span class="operator">+</span>\underbrace&#123;b<span class="operator">+</span>c&#125;<span class="keyword">_</span>&#123;<span class="number">1.0</span>&#125;<span class="operator">+</span>d&#125;<span class="operator">^</span>&#123;<span class="number">2.0</span>&#125;</span><br><span class="line"></span><br><span class="line">箭头符号： </span><br><span class="line"><span class="operator">↑</span>：\uparrow </span><br><span class="line"><span class="operator">↓</span>：\downarrow </span><br><span class="line"><span class="operator">⇑</span> ：\<span class="type">Uparrow</span> </span><br><span class="line"><span class="operator">⇓</span>：\<span class="type">Downarrow</span> </span><br><span class="line"><span class="operator">→</span>：\rightarrow </span><br><span class="line"><span class="operator">←</span> ：\leftarrow </span><br><span class="line"><span class="operator">⇒</span> ：\<span class="type">Rightarrow</span> </span><br><span class="line"><span class="operator">⇐</span> ：\<span class="type">Leftarrow</span> </span><br><span class="line"><span class="operator">⟶</span> ：\longrightarrow </span><br><span class="line"><span class="operator">⟵</span> ：\longleftarrow </span><br><span class="line"><span class="operator">⟹</span>：\<span class="type">Longrightarrow</span> </span><br><span class="line"><span class="operator">⟸</span> ：\<span class="type">Longleftarrow</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.13</span> 需要转义的字符</span><br><span class="line"></span><br><span class="line">要输出字符　空格　#　$　<span class="operator">%</span>　<span class="operator">&amp;</span>　<span class="keyword">_</span>　&#123;　&#125;　，用命令：　\空格　#　\$　\<span class="operator">%</span>　\<span class="operator">&amp;</span>　<span class="keyword">_</span>　&#123;　&#125;</span><br><span class="line"></span><br><span class="line"><span class="number">3.14</span> 使用指定字体</span><br><span class="line"></span><br><span class="line">&#123;\rm text&#125;如： </span><br><span class="line">使用罗马字体：text text </span><br><span class="line">其他的字体还有： </span><br><span class="line">\rm　　罗马体　　　　　　　\it　　意大利体 </span><br><span class="line">\bf　　黑体　　　　　　　　\cal 　花体 </span><br><span class="line">\sl　　倾斜体　　　　　　　\sf　　等线体 </span><br><span class="line">\mit 　数学斜体　　　　　　\tt　　打字机字体 </span><br><span class="line">\sc　　小体大写字母</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><p>Markdown文档   </p>
+<p>网页地址：</p>
+<p>[1]	[StackEdit]  <a target="_blank" rel="noopener external nofollow noreferrer" href="http://xianbai.me/learn-md/article/about/readme.html">http://xianbai.me/learn-md/article/about/readme.html</a></p>
+<p>[2]	[Markdown中文文档]  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://markdown-zh.readthedocs.io/en/latest/">https://markdown-zh.readthedocs.io/en/latest/</a></p>
+<p>[3]	[GitHub官方] <a target="_blank" rel="noopener external nofollow noreferrer" href="https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax</a></p>
+<p>[4]    [菜鸟教程  ]<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.runoob.com/markdown/md-tutorial.html">https://www.runoob.com/markdown/md-tutorial.html</a></p>
+<p>[5]	[typora官方]<a target="_blank" rel="noopener external nofollow noreferrer" href="https://typora.io/">https://typora.io/</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://javis-yu.github.io">于邦震</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://javis-yu.github.io/archives/e6f98d98.html">https://javis-yu.github.io/archives/e6f98d98.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://javis-yu.github.io" target="_blank">Javis's Blogs</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6277c3fcf92f7961" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/archives/55b8db93.html"><img class="prev-cover" src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510174059.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">安装 HEXO</div></div></a></div><div class="next-post pull-right"><a href="/archives/4a17b156.html"><img class="next-cover" src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510174059.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/headimg.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">于邦震</div><div class="author-info__description">一个苦逼的二本大学生挣扎的历史</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Javis-Yu"><i class="fab fa-github"></i><span>我的GitHub 一起玩丫😘~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Javis-Yu" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yubangzhenmo@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://user.qzone.qq.com/1213695387" rel="external nofollow noreferrer" target="_blank" title="QQ：1213695387"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://mp.weixin.qq.com/s/I-0GQGbZmyjvwCht4vdwCw" rel="external nofollow noreferrer" target="_blank" title="微信公众号：浮生有雨秃头路"><i class="fa-brands fa-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">保证会持续更新有意思的知识🤯，不过希望您们喜欢🥴！！可以在留言里告诉我🥳，说不定下一个就更新你想知道的内容哦☕！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Typora%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BD%BF%E7%94%A8%E7%AF%87%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">Typora基础（使用篇）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.2.</span> <span class="toc-text">Markdown介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">1.3.</span> <span class="toc-text">常用快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E7%BA%A7%E5%88%AB"><span class="toc-number">1.3.1.</span> <span class="toc-text">标题级别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%E6%96%87%E5%AD%97-gt"><span class="toc-number">1.3.2.</span> <span class="toc-text">引用文字  &gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97-%E5%8F%8D%E5%BC%95%E5%8F%B7-96"><span class="toc-number">1.3.5.</span> <span class="toc-text">代码块  反引号&#96;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%88%E4%BC%9A%E6%9C%89%E5%85%AC%E5%BC%8F%E7%AF%87%E8%BF%9B%E8%A1%8C%E7%BB%86%E8%87%B4%E8%AE%B2%E8%A7%A3%EF%BC%89"><span class="toc-number">1.3.6.</span> <span class="toc-text">数学表达式（会有公式篇进行细致讲解）$$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BCCtrl-T"><span class="toc-number">1.3.7.</span> <span class="toc-text">插入表格Ctrl + T</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="toc-number">1.3.8.</span> <span class="toc-text">脚注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">1.3.9.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%EF%BC%88TOC%EF%BC%89"><span class="toc-number">1.3.10.</span> <span class="toc-text">目录（TOC）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.11.</span> <span class="toc-text">链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.11.1.</span> <span class="toc-text">内部链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.11.2.</span> <span class="toc-text">参考链接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%9D%80"><span class="toc-number">1.3.12.</span> <span class="toc-text">网址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">1.3.13.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%9C%E4%BD%93-%E5%8D%95%E4%B8%AA%E6%98%9F%E5%8F%B7"><span class="toc-number">1.3.14.</span> <span class="toc-text">斜体 *单个星号*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E7%B2%97-%E4%B8%A4%E4%B8%AA%E6%98%9F%E5%8F%B7"><span class="toc-number">1.3.15.</span> <span class="toc-text">加粗**两个星号**</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E7%B2%97%E6%96%9C%E4%BD%93-%E5%8A%A0%E7%B2%97%E6%96%9C%E4%BD%93"><span class="toc-number">1.3.16.</span> <span class="toc-text">加粗斜体***加粗斜体***</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF-Alt-Shift-5"><span class="toc-number">1.3.17.</span> <span class="toc-text">删除线 Alt + Shift + 5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF-Ctrl-U"><span class="toc-number">1.3.18.</span> <span class="toc-text">下划线  Ctrl + U</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7-%EF%BC%9A"><span class="toc-number">1.3.19.</span> <span class="toc-text">表情符号   ：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E6%A0%87-lt-sub-gt-%E6%96%87%E6%9C%AC-lt-sub-gt"><span class="toc-number">1.3.20.</span> <span class="toc-text">下标&lt;sub&gt;文本&lt;&#x2F;sub&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E6%A0%87-lt-sup-gt-%E6%96%87%E6%9C%AC-lt-sup-gt"><span class="toc-number">1.3.21.</span> <span class="toc-text">上标&lt;sup&gt;文本&lt;&#x2F;sup&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E4%BA%AE-%E9%AB%98%E4%BA%AE"><span class="toc-number">1.3.22.</span> <span class="toc-text">高亮&#x3D;&#x3D;高亮&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%B1%85%E4%B8%AD-lt-center-gt-lt-center-gt"><span class="toc-number">1.3.23.</span> <span class="toc-text">文本居中&lt;center&gt;&lt;&#x2F;center&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8D%A2%E8%A1%8C%E7%AC%A6Enter"><span class="toc-number">1.3.24.</span> <span class="toc-text">换行符Enter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89"><span class="toc-number">1.3.25.</span> <span class="toc-text">转义 \</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML"><span class="toc-number">1.4.</span> <span class="toc-text">HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.5.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E5%AF%B9%E7%85%A7%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text">HTML特殊字符编码对照表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A"><span class="toc-number">2.0.1.</span> <span class="toc-text">参考文献：</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/a8495978.html" title="训练分类器"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510173917.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="训练分类器"/></a><div class="content"><a class="title" href="/archives/a8495978.html" title="训练分类器">训练分类器</a><time datetime="2022-01-30T11:35:44.000Z" title="发表于 2022-01-30 19:35:44">2022-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/7ca31f7.html" title="神经网络"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510173917.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="神经网络"/></a><div class="content"><a class="title" href="/archives/7ca31f7.html" title="神经网络">神经网络</a><time datetime="2022-01-29T07:52:26.000Z" title="发表于 2022-01-29 15:52:26">2022-01-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/3f74665c.html" title="pytorch 学习网站"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510173917.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pytorch 学习网站"/></a><div class="content"><a class="title" href="/archives/3f74665c.html" title="pytorch 学习网站">pytorch 学习网站</a><time datetime="2021-12-22T10:32:15.000Z" title="发表于 2021-12-22 18:32:15">2021-12-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/b25d1379.html" title="中断程序"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/lo2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中断程序"/></a><div class="content"><a class="title" href="/archives/b25d1379.html" title="中断程序">中断程序</a><time datetime="2021-05-05T06:34:45.000Z" title="发表于 2021-05-05 14:34:45">2021-05-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/90c0b5a1.html" title="torch.autograd 的简要介绍"><img src="http://cdn.jsdelivr.net/gh/Javis-Yu/img/img/20220510173917.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="torch.autograd 的简要介绍"/></a><div class="content"><a class="title" href="/archives/90c0b5a1.html" title="torch.autograd 的简要介绍">torch.autograd 的简要介绍</a><time datetime="2021-02-01T04:44:25.000Z" title="发表于 2021-02-01 12:44:25">2021-02-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2022 By 于邦震</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">苦逼大学生向您问好 欢迎来到我的 <a href="https://javis-yu.github.io/">小小奋斗史博客</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="3779629" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume=0.2> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
